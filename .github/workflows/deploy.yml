@@ -7,19 +7,18 @@ on:
 
 jobs:
   deploy:
-    runs-on: windows-latest  # Runs the workflow on a Windows runner
+    runs-on: windows-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Install Web Deploy
-        run: |
-          choco install webdeploy -y
+        run: choco install webdeploy -y
 
       - name: Deploy to IIS Server
         run: |
           & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
           -source:contentPath="." `
-          -dest:contentPath="${{ secrets.SITE_NAME }}",computerName="https://${{ secrets.IIS_SERVER }}/MSDeploy.axd?site=${{ secrets.SITE_NAME }}",username="${{ secrets.IIS_USER }}",password="${{ secrets.IIS_PASSWORD }}",authType="Basic" `
+          -dest:contentPath="${{ secrets.SITE_NAME }}",computerName="https://${{ secrets.IIS_SERVER }}/MSDeploy.axd?site=${{ secrets.SITE_NAME }}",username="${{ secrets.IIS_USER }}",password="${{ secrets.IIS_PASSWORD }}",authType=Basic `
           -verb:sync -enableRule:DoNotDeleteRule -allowUntrusted
