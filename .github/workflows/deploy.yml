@@ -3,7 +3,7 @@ name: Deploy to IIS Server
 on:
   push:
     branches:
-      - main  # Runs when code is pushed to the main branch
+      - main  # Trigger deployment when pushing to main branch
 
 jobs:
   deploy:
@@ -22,3 +22,4 @@ jobs:
           -source:contentPath="." `
           -dest:contentPath="${{ secrets.SITE_NAME }}",computerName="https://${{ secrets.IIS_SERVER }}/MSDeploy.axd?site=${{ secrets.SITE_NAME }}",username="${{ secrets.IIS_USER }}",password="${{ secrets.IIS_PASSWORD }}",authType=Basic `
           -verb:sync -enableRule:DoNotDeleteRule -allowUntrusted
+        shell: pwsh
