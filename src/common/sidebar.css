@@ -1,0 +1,115 @@
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease;
+    overflow: auto;
+}
+
+/* ✅ Sidebar Close होने पर Width Zero */
+.sidebar.closed {
+    width: 0;
+    overflow: hidden;
+}
+
+/* ✅ Sidebar Open होने पर Full Width */
+.sidebar.open {
+    width: 250px;
+}
+
+/* ✅ Menu Items */
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* ✅ Dropdown Button */
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* ✅ Dropdown Submenu */
+.dropdown-menu {
+    display: none;
+    background: #34495e;
+    padding-left: 20px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+/* ✅ Logout Button */
+.logout {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.logout li {
+    text-align: center;
+    padding: 15px;
+}
+
+/* ✅ Sidebar Toggle Button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+/* ✅ Main Content Styling */
+.main-content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease; /* ✅ Smooth Animation */
+}
+
+/* ✅ Sidebar Open होने पर Content Shift */
+.main-content.with-sidebar {
+    margin-left: 250px;
+}
+
+/* ✅ Sidebar बंद होने पर Content Full Width */
+.main-content.without-sidebar {
+    margin-left: 0;
+}

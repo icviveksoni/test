@@ -1,0 +1,17 @@
+.heading{
+    font-size: 32px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.sub-heading{
+    font-size: 24px;
+}
+.tab-text{
+    font-size: 18px;
+    background-color: #f8f9fa;
+    border-radius: 30px;
+    text-align: center;
+}
+.arrow{
+    margin-left: 10px;
+    opacity: 50%;
+}

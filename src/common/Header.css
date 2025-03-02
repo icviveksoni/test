@@ -1,0 +1,31 @@
+.nav-nav{
+    flex-grow: 0 !important;
+}
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: -115%;
+    top: 260px;
+    }
+    .dropdown-menu .dropdown-submenu-left {
+    /* right: 10%;
+    left: auto; */
+    }
+    .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+    }
+
+    .navbar{
+        z-index: 1111;
+        background-color: #3c8dbc !important;
+        color: #ffffff !important;
+        position: fixed;
+        width: 100%;
+    }
+
+
+    .nav-nav .nav-link::after{
+        display: none !important;
+    }
+
+    /* */

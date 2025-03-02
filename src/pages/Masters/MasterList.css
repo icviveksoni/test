@@ -1,0 +1,8 @@
+.group-item {
+    transition: background-color 0.3s ease;
+  }
+  
+  .group-item:hover {
+    background-color: yellow;
+  }
+  

@@ -1,0 +1,87 @@
+/* Base styles */
+.form-container {
+  font-family: Arial, sans-serif;
+  padding: 0; /* Remove padding */
+  background-color: transparent; /* Remove background color */
+  margin: 0; /* Remove margins */
+  width: 100%; /* Full width */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px; /* Add consistent spacing between rows */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  border-bottom: 1px solid #ddd; /* Optional separator for rows */
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+  flex: 1; /* Labels take up 1 part of space */
+  min-width: 120px; /* Minimum width to avoid collapsing */
+}
+
+
+
+h3,
+h4 {
+  margin: 15px 15px 10px; /* Add margin for section titles */
+  color: #444;
+}
+
+span {
+  color: #333;
+}
+
+.header {
+  text-align: left;
+  margin: 20px 15px;
+  font-size: 1.5em;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  width: calc(100% - 30px); /* Adjust for consistent padding */
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align labels to the start */
+    padding: 10px 10px; /* Reduce padding */
+  }
+
+  label {
+    margin-bottom: 5px; /* Add spacing between label and input */
+    min-width: unset; /* Remove minimum width for smaller screens */
+  }
+
+  
+
+  h3,
+  h4 {
+    font-size: 1.2em; /* Adjust font size */
+    margin: 10px 10px; /* Adjust margins */
+  }
+
+  .header {
+    font-size: 1.3em; /* Adjust header size */
+    margin: 10px 10px; /* Reduce margins */
+  }
+}
+
+@media (max-width: 480px) {
+  h3,
+  h4 {
+    font-size: 1em; /* Further reduce font size */
+    margin: 10px 5px; /* Reduce margins */
+  }
+
+  .header {
+    font-size: 1.1em; /* Adjust header size */
+    margin: 10px 5px; /* Adjust header margin */
+  }
+}

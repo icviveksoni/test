@@ -1,0 +1,185 @@
+.fa {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size:20px;
+    }
+    
+    
+    .dropdown-menu1:hover,nav.dropdown-menu1.expanded {
+    width:250px;
+    overflow:visible;
+    }
+    
+    .dropdown-menu1 {
+    background:#ffffff;
+    border-right:1px solid #e5e5e5;
+    position:fixed;
+    top:61px;
+    bottom:0;
+    /* height:100%; */
+    left:0;
+    width:60px;
+    overflow:hidden;
+    -webkit-transition:width .05s linear;
+    transition:width .05s linear;
+    -webkit-transform:translateZ(0) scale(1,1);
+    z-index:1;
+    }
+    
+    .dropdown-menu1>ul {
+    margin:7px 0;
+    }
+    
+    .dropdown-menu1 li {
+    position:relative;
+    display:block;
+    width:250px;
+    }
+    /* .nav-link:hover{
+        color: #3c8dbc !important;
+    } */
+    .dropdown-menu1 li>a {
+    position:relative;
+    display:table;
+    border-collapse:collapse;
+    border-spacing:0;
+    color:#3c8dbc;
+     font-family: arial;
+    font-size: 14px;
+    text-decoration:none;
+    /* -webkit-transform:translateZ(0) scale(1,1);
+    -webkit-transition:all .1s linear;
+    transition:all .1s linear; */
+      
+    }
+    
+    .dropdown-menu1 .nav-icon {
+    position:relative;
+    display:table-cell;
+    width:60px;
+    height:36px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:18px;
+    }
+    
+    .dropdown-menu1 .nav-text {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+    width:190px;
+      font-family: 'Titillium Web', sans-serif;
+    }
+    
+    .dropdown-menu1>ul.logout {
+    position:absolute;
+    left:0;
+    bottom:0;
+    }
+    
+    .no-touch .scrollable.hover {
+    overflow-y:hidden;
+    }
+    
+    .no-touch .scrollable.hover:hover {
+    overflow-y:auto;
+    overflow:visible;
+    }
+    
+    a:hover,a:focus {
+    text-decoration:none;
+    }
+    
+    nav {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+    }
+    
+    nav ul,nav li {
+    outline:0;
+    margin:0;
+    padding:0;
+    }
+    /* .dropdown-menu1 li:hover>a,nav.dropdown-menu1 li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+    color:#fff;
+    background-color:#000000;
+    } */
+    .area {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+    }
+    /* @font-face {
+      font-family: 'Titillium Web';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+    } */
+
+.dropdown-menu1 .dropdown-toggle::after{
+    /* display: none !important; */
+    margin-top: 15px;
+    margin-left: -17px;
+}
+.dropdown-menu1 .dropdown-menu{
+    margin-left: 100px !important;
+}
+
+
+
+.main-menu{
+    margin-left: 60px;
+    margin-top: 70px;
+}
+.main-menu input{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.main-menu select{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 40px;
+    padding: 5px;
+}
+.main-menu textarea{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.main-menu textarea:focus-visible{
+    outline: none !important;
+}
+.main-menu input:focus-visible{
+    outline: none !important;
+}
+.main-menu select:focus-visible{
+    outline: none !important;
+}
+    /* .nav-nav{
+        flex-grow: 0 !important;
+    }
+    .dropdown-menu1 .dropdown-submenu1 {
+        display: none !important;
+        position: absolute !important;
+        left: 260px !important;
+        top: 260px !important;
+    }
+    .dropdown-menu1 .dropdown-submenu-left1 {
+        right: 10% !important;
+        left: auto !important;
+    }
+    .dropdown-menu1 > li:hover > .dropdown-submenu1 {
+        display: block !important;
+    } */
