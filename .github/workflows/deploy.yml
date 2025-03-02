@@ -19,7 +19,7 @@ jobs:
       - name: Deploy to IIS Server
         run: |
           & "C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" `
-          -source:contentPath="." `
+          -source:contentPath="D:\Prince-CICD\test" `
           -dest:contentPath="${{ secrets.SITE_NAME }}",computerName="https://${{ secrets.IIS_SERVER }}/MSDeploy.axd?site=${{ secrets.SITE_NAME }}",username="${{ secrets.IIS_USER }}",password="${{ secrets.IIS_PASSWORD }}",authType=Basic `
           -verb:sync -enableRule:DoNotDeleteRule -allowUntrusted
         shell: pwsh
